@@ -1,0 +1,146 @@
+# Preference setting overrides
+gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
+
+# State setting overrides
+gui_state_default_create -off -ini
+gui_set_state_value -category Layout -key child_console_size_x -value 717
+gui_set_state_value -category Layout -key child_console_size_y -value 178
+gui_set_state_value -category Layout -key child_data_size_x -value 173
+gui_set_state_value -category Layout -key child_data_size_y -value 388
+gui_set_state_value -category Layout -key child_hier_size_x -value 173
+gui_set_state_value -category Layout -key child_hier_size_y -value 388
+gui_set_state_value -category Layout -key child_source_docknewline -value false
+gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_source_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_source_size_x -value 374
+gui_set_state_value -category Layout -key child_source_size_y -value 383
+gui_set_state_value -category Layout -key main_pos_x -value 21
+gui_set_state_value -category Layout -key main_pos_y -value 67
+gui_set_state_value -category Layout -key main_size_x -value 738
+gui_set_state_value -category Layout -key main_size_y -value 774
+gui_create_state_key -category FindDialog -key m_pMatchCase -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
+gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
+gui_state_default_create -off
+
+# Begin command logging
+gui_open_db -file /afs/ir.stanford.edu/users/r/p/rprabala/EE271/assignment/assignment2/vcdplus.vpd -design V1
+gui_list_expand -id  Hier.1   top_rast
+gui_list_expand -id  Hier.1   top_rast.rast
+gui_list_select -id Hier.1 -selected  { top_rast.rast.test_iterator   }
+gui_list_select -id Data.1 -selected  { {top_rast.rast.test_iterator.next_state_R14H[0:0]}   }
+gui_open_window Wave
+gui_list_add -id Wave.1 -from Data.1 { {top_rast.rast.test_iterator.next_state_R14H[0:0]} } -insertionbar
+gui_list_select -id Data.1 -selected  { {top_rast.rast.test_iterator.state_R14H[0:0]}   }
+gui_list_add -id Wave.1 -from Data.1 { {top_rast.rast.test_iterator.state_R14H[0:0]} } -insertionbar
+gui_list_select -id Wave.1 -selected  { {top_rast.rast.test_iterator.state_R14H[0:0]}   }
+gui_list_select -id Wave.1 -selected  { {top_rast.rast.test_iterator.next_state_R14H[0:0]}   }
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select -id Wave.1 -selected  { {top_rast.rast.test_iterator.next_state_R14H[0:0]}   }
+gui_list_action -id  Wave.1 {top_rast.rast.test_iterator.next_state_R14H[0:0]}
+gui_get_drivers -id Wave.1 -signal {top_rast.rast.test_iterator.next_state_R14H[0:0]}
+gui_list_select -id Wave.1 -selected  { {top_rast.rast.test_iterator.state_R14H[0:0]}   }
+gui_list_select -id Wave.1 -selected  {  }
+gui_seek_previous -id Wave.1 -number 1 
+gui_seek_next -id Wave.1 -number 1 
+gui_list_select -id Data.1 -selected  { top_rast.rast.test_iterator.validPoly_R13H   }
+gui_list_show_data -select -id  Data.1   top_rast.rast.test_iterator.validPoly_R13H
+gui_copy_selected -id Data.1
+gui_list_add -id Wave.1 -from Data.1 { top_rast.rast.test_iterator.validPoly_R13H } -insertionbar
+gui_list_select -id Data.1 -selected  { {top_rast.rast.test_iterator.unnamed$$_7}   }
+gui_list_select -id Data.1 -selected  { {top_rast.rast.test_iterator.box_R14S[1:0][1:0][23:0]}   }
+gui_list_action -id  Data.1 {top_rast.rast.test_iterator.box_R14S[1:0][1:0][23:0]}
+gui_list_select -id Data.1 -selected  { {top_rast.rast.test_iterator.state_R14H[0:0]}   }
+gui_list_action -id  Data.1 {top_rast.rast.test_iterator.state_R14H[0:0]}
+gui_marker_move -id  Wave.1 C1 128
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_list_select -id Wave.1 -selected  { {top_rast.rast.test_iterator.state_R14H[0:0]}   }
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select -id Wave.1 -selected  { Group1   }
+gui_list_select -id Hier.1 -selected  { top_rast   }
+gui_list_select -id Data.1 -selected  { {top_rast.poly_R10S[2:0][2:0][23:0]}   }
+gui_list_add -id Wave.1 -from Data.1 { {top_rast.poly_R10S[2:0][2:0][23:0]} } -insertionbar
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_expand -id  Wave.1   {top_rast.poly_R10S[2:0][2:0][23:0]}
+gui_marker_move -id  Wave.1 C1 3
+gui_marker_select -id  Wave.1 { C1 }
+gui_marker_move -id  Wave.1 C1 0
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_marker_move -id  Wave.1 C1 0
+gui_marker_move -id  Wave.1 C1 0
+gui_marker_move -id  Wave.1 C1 0
+gui_zoom -window  Wave.1  -full
+gui_marker_move -id  Wave.1 C1 1399
+gui_marker_move -id  Wave.1 C1 138
+gui_zoom -window Wave.1 -factor 2
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_marker_move -id  Wave.1 C1 0
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_marker_move -id  Wave.1 C1 0
+gui_marker_move -id  Wave.1 C1 0
+gui_marker_move -id  Wave.1 C1 0
+gui_wv_zoom_timerange -id  Wave.1 0 1
+gui_wv_zoom_timerange -id  Wave.1 0 1
+gui_marker_move -id  Wave.1 C1 0
+gui_wv_zoom_timerange -id  Wave.1 0 1
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_marker_move -id  Wave.1 C1 265
+gui_marker_move -id  Wave.1 C1 994
+gui_wv_zoom_timerange -id  Wave.1 0 258
+gui_wv_zoom_timerange -id  Wave.1 0 28
+gui_view_port_history -window Wave.1 -previous
+gui_wv_zoom_timerange -id  Wave.1 0 11
+gui_wv_zoom_timerange -id  Wave.1 0 1
+gui_wv_zoom_timerange -id  Wave.1 0 1
+gui_wv_zoom_timerange -id  Wave.1 0 1
+gui_list_select -id Wave.1 -selected  { {top_rast.poly_R10S[2:0][2:0][23:0]}   }
+gui_list_select -id Wave.1 -selected  { {top_rast.poly_R10S[2][2:0][23:0]}   }
+gui_marker_move -id  Wave.1 C1 0
+gui_wv_zoom_timerange -id  Wave.1 0 0
+gui_wv_zoom_timerange -id  Wave.1 0 1
+gui_list_set_selected_property -id Wave.1 -radix decimal
+gui_marker_move -id  Wave.1 C1 0
+gui_close_window -window Wave.1
+gui_close_window -window TopLevel.2

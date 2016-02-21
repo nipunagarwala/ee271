@@ -1,0 +1,20 @@
+
+The design has assertions or cover properties.
+The assertion browser can be used to view them. Click on the assertion toolbar button or use the menu 'Window->Panes->Assertion' to open it.
+The file '/afs/ir.stanford.edu/users/r/p/rprabala/EE271/assignment/assignment2/vcdplus.vpd' was opened successfully.
+Warning: [DVDB151] 
+The static design database 'libmdb.so' cannot be loaded.
+Cannot open 'libmdb.so' '/usr/class/ee/synopsys/vcs-mx/F-2011.12/mdb/libmdb.so: cannot open shared object file: No such file or directory'.
+Check that '$VCS_HOME' is set and pointing to the correct location.
+Warning: [DVSW307] 
+Could not find any driver for signal: 'top_rast.rast.test_iterator.next_state_R14H[0:0]'.
+Warning: [DVWW009] 
+Seek hit time zero with no more matches.
+Warning: [DVWW010] 
+Seek hit end of values with no more matches.
+Warning: [DVDL907] 
+Cannot trace driver/loads on subset of multi-dimension array: '{top_rast.poly_R10S[2][2:0][23:0]}'.
+Please select single element or entire multi-dimension array.
+Warning: [DVDL907] 
+Cannot trace driver/loads on subset of multi-dimension array: '{top_rast.poly_R10S[0][2:0][23:0]}'.
+Please select single element or entire multi-dimension array.
