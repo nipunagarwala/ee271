@@ -1,6 +1,6 @@
 Chronologic VCS simulator copyright 1991-2011
 Contains Synopsys proprietary information.
-Compiler version F-2011.12_Full64; Runtime version F-2011.12_Full64;  Feb 21 16:23 2016
+Compiler version F-2011.12_Full64; Runtime version F-2011.12_Full64;  Feb 22 13:48 2016
 Message: From $vcdplusmemon at time 0 in file genesis_verif/testbench_unq1.v line 369: [VCD+-SFSL]: 
 Setting file switch size limit to (100) megabytes.
 Message: From $vcdplusmemon at time 0 in file genesis_verif/testbench_unq1.v line 369: [VCD+-SVBS]: 
@@ -12,9 +12,9 @@ Simulation will timout after 50000000 cycles
 Simulation will use test file /usr/class/ee271/project//vect//vec_271_01_sv_short.dat
 Seed=      12345 
 RT Warning: No condition matches in 'unique case' statement.
-        "genesis_synth/test_iterator_unq1.v", line 332, for top_rast.rast.test_iterator, at time     0.
+        "genesis_synth/test_iterator_unq1.v", line 336, for top_rast.rast.test_iterator, at time     0.
 RT Warning: No condition matches in 'unique case' statement.
-        "genesis_synth/test_iterator_unq1.v", line 332, for top_rast.rast.test_iterator, at time     0.
+        "genesis_synth/test_iterator_unq1.v", line 336, for top_rast.rast.test_iterator, at time     0.
 time=     15000 ************** Driver Is Initializing Test from File *****************
 Setting screen params: w=800 h=600 msaa=16
 time=     30000 ************** Initializing FB and ZB *****************
@@ -28,19 +28,21 @@ time=     52000 	         0 samples processed,          0 of them hit
 time=     53000 	         0 samples processed,          0 of them hit
 time=     54000 	         0 samples processed,          0 of them hit
 time=     55000 	         0 samples processed,          0 of them hit
-time= 104276000 	    100000 samples processed,      26662 of them hit
-time= 208852000 	    200000 samples processed,      56013 of them hit
-time= 235408000 ************** Driver Is Done *****************
-time= 235423010 ************** Writing Final Image to File *****************
-time= 235423030 ************** Finished Final Image to File *****************
-time= 235423040 ********************FINISH***********************
-Cycles:      235375 uPoly:       10001 sampleTests:      225368 sampleHits:       62995 
+time=     56000 	         0 samples processed,          0 of them hit
+time=     57000 	         0 samples processed,          0 of them hit
+time= 100057000 	    100000 samples processed,      26662 of them hit
+time= 200057000 	    200000 samples processed,      56013 of them hit
+time= 225410000 ************** Driver Is Done *****************
+time= 225425010 ************** Writing Final Image to File *****************
+time= 225425030 ************** Finished Final Image to File *****************
+time= 225425040 ********************FINISH***********************
+Cycles:      225377 uPoly:       10001 sampleTests:      225368 sampleHits:       62995 
 
-JJ: uPoly / cycle : 0.042490 
-JJ: cycle / uPoly : 23.535146 
+JJ: uPoly / cycle : 0.044375 
+JJ: cycle / uPoly : 22.535446 
 $finish called from file "genesis_verif/testbench_unq1.v", line 328.
-$finish at simulation time            235423040
+$finish at simulation time            225425040
            V C S   S i m u l a t i o n   R e p o r t 
-Time: 235423040 ns
-CPU Time:      6.940 seconds;       Data structure size:   0.2Mb
-Sun Feb 21 16:23:15 2016
+Time: 225425040 ns
+CPU Time:      7.820 seconds;       Data structure size:   0.3Mb
+Mon Feb 22 13:48:43 2016
