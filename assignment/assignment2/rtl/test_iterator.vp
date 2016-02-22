@@ -311,19 +311,7 @@ module `mname()`
       at_right_edg_R14H = (sample_R14S[0] == box_R14S[1][0]);
 
       at_end_box_R14H = at_top_edg_R14H && at_right_edg_R14H;
-   end
-
-//   logic signed [`$sig_fig`-1:0] step_size = `$sig_fig`'b1 << convert;
-   // logic signed [`$sig_fig`-1:0] step_size = 24'b1 << 10;
-
-   // concatenate next y step and left most of bounding box
-//   assign next_up_samp_R14S[1] = sample_R14S[1]+step_size   ;//+(24'b1 << 12); 
-//   assign next_up_samp_R14S[0] = box_R14S[0][0];
-   // concatenate next x step and current y
-//   assign next_rt_samp_R14S[0] = sample_R14S[0]+step_size   ;// + (24'b1 << 12);
-//   assign next_rt_samp_R14S[1] = sample_R14S[1];
-
-  
+   end  
    
    //////
    ////// Then complete the following combinational logic defining the
