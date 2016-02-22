@@ -13,7 +13,7 @@ Warning-[LINX_KRNL] Unsupported Linux kernel
 *** Using c compiler gcc instead of cc ...
 *** Using loader gcc instead of cc ...
                          Chronologic VCS (TM)
-         Version F-2011.12_Full64 -- Sun Feb 21 10:07:46 2016
+         Version F-2011.12_Full64 -- Sun Feb 21 16:04:22 2016
                Copyright (c) 1991-2011 by Synopsys Inc.
                          ALL RIGHTS RESERVED
 
@@ -75,14 +75,90 @@ Top Level Modules:
 TimeScale is 1 ns / 1 ns
 Starting vcs inline pass...
 40 modules and 0 UDP read.
-	However, due to incremental compilation, only 1 module needs to be compiled.
-recompiling module test_iterator_unq1 because:
-	This module or some inlined child module(s) has/have been modified.
+Generating code for _VCSgd__vcs_unit__368067286_3ubyvd_1
+Generating code for _VCSgd_std_1
+recompiling module dff_unq1
+Generating code for _VCSgd_dff_unq1_TC2OEe_1
+recompiling module dff2_unq1
+Generating code for _VCSgd_dff2_unq1_3ciCce_1
+recompiling module dff3_unq1
+Generating code for _VCSgd_dff3_unq1_HVYWOd_1
+recompiling module dff2_unq2
+Generating code for _VCSgd_dff2_unq2_wUQp0d_1
+recompiling module dff3_unq2
+Generating code for _VCSgd_dff3_unq2_Wl4DSd_1
+recompiling module dff_unq3
+Generating code for _VCSgd_dff_unq3_tkBlNe_1
+recompiling module dff2_unq3
+Generating code for _VCSgd_dff2_unq3_FTU63d_1
+recompiling module dff3_unq3
+Generating code for _VCSgd_dff3_unq3_T29kWd_1
+recompiling module dff2_unq4
+Generating code for _VCSgd_dff2_unq4_2FG0Sd_1
+recompiling module dff3_unq4
+Generating code for _VCSgd_dff3_unq4_m4FRYd_1
+recompiling module dff_unq4
+Generating code for _VCSgd_dff_unq4_IwQvje_1
+recompiling module bbox_unq1
+Generating code for _VCSgd_bbox_unq1_rPFpOc_1
+recompiling module dff_unq6
+Generating code for _VCSgd_dff_unq6_otKate_1
+recompiling module test_iterator_unq1
 Generating code for _VCSgd_test_iterator_unq1_8pHJie_1
-make[1]: Entering directory `/afs/ir.stanford.edu/users/r/p/rprabala/EE271/assignment/assignment2/csrc'
-ld -r -o pre_vcsobj_1_1.o --whole-archive pre_vcsobj_1_1.a --no-whole-archive
+recompiling module dff_unq7
+Generating code for _VCSgd_dff_unq7_Jynzye_1
+recompiling module dff2_unq5
+Generating code for _VCSgd_dff2_unq5_bPaQXd_1
+recompiling module dff3_unq5
+Generating code for _VCSgd_dff3_unq5_Hv8G3d_1
+recompiling module dff2_unq6
+Generating code for _VCSgd_dff2_unq6_GZRmJd_1
+recompiling module hash_jtree_unq1
+Generating code for _VCSgd_hash_jtree_unq1_LxW6Kc_1
+recompiling module sampletest_unq1
+Generating code for _VCSgd_sampletest_unq1_V9mWYc_1
+recompiling module rast
+Generating code for _VCSgd_rast_1
+recompiling module rast_driver_unq1
+Generating code for _VCSgd_rast_driver_unq1_fKQNEe_1
+recompiling module zbuff_unq1
+Generating code for _VCSgd_zbuff_unq1_sde69b_1
+recompiling module dff_unq10
+Generating code for _VCSgd_dff_unq10_epRKS_1
+recompiling module dff2_unq7
+Generating code for _VCSgd_dff2_unq7_XiU3Md_1
+recompiling module dff3_unq6
+Generating code for _VCSgd_dff3_unq6_GBXE9d_1
+recompiling module dff_unq11
+Generating code for _VCSgd_dff_unq11_5I8uO_1
+recompiling module bbx_sb_unq1
+Generating code for _VCSgd_bbx_sb_unq1_skNc5d_1
+recompiling module dff_unq13
+Generating code for _VCSgd_dff_unq13_3scSV_1
+recompiling module dff2_unq8
+Generating code for _VCSgd_dff2_unq8_422XOe_1
+recompiling module dff3_unq7
+Generating code for _VCSgd_dff3_unq7_Jz0lde_1
+recompiling module dff2_unq9
+Generating code for _VCSgd_dff2_unq9_BIjIKe_1
+recompiling module dff_unq14
+Generating code for _VCSgd_dff_unq14_QQYu7_1
+recompiling module smpl_sb_unq1
+Generating code for _VCSgd_smpl_sb_unq1_ft953b_1
+recompiling module dff2_unq10
+Generating code for _VCSgd_dff2_unq10_71N20b_1
+recompiling module smpl_cnt_sb_unq1
+Generating code for _VCSgd_smpl_cnt_sb_unq1_ChfxP_1
+recompiling module perf_monitor_unq1
+Generating code for _VCSgd_perf_monitor_unq1_RiFHS_1
+recompiling module testbench_unq1
+Generating code for _VCSgd_testbench_unq1_OpXQPe_1
+recompiling module top_rast
+Generating code for _VCSgd_top_rast_P7KCG_1
+All of 41 modules done
+make[1]: Entering directory `/afs/ir.stanford.edu/users/r/p/rprabala/ee271/assignment/assignment2/csrc'
 if [ -x ../simv ]; then chmod -x ../simv; fi
-gcc  -o ../simv    -Wl,-whole-archive    -Wl,-no-whole-archive  /afs/ir.stanford.edu/users/r/p/rprabala/EE271/assignment/assignment2/gold/rastBBox_fix_sv.o  _vcsobj_1_1.o  5NrI_d.o 5NrIB_d.o SIM_l.o   pre_vcsobj_1_1.o  rmapats_mop.o rmapats.o      /usr/class/ee/synopsys/vcs-mx/F-2011.12/amd64/lib/libvirsim.so /usr/class/ee/synopsys/vcs-mx/F-2011.12/amd64/lib/liberrorinf.so /usr/class/ee/synopsys/vcs-mx/F-2011.12/amd64/lib/libsnpsmalloc.so     /usr/class/ee/synopsys/vcs-mx/F-2011.12/amd64/lib/libvcsnew.so /usr/class/ee/synopsys/vcs-mx/F-2011.12/amd64/lib/libuclinative.so         /usr/class/ee/synopsys/vcs-mx/F-2011.12/amd64/lib/vcs_save_restore_new.o -ldl -lm  -lc -lpthread -ldl 
+gcc  -o ../simv    -Wl,-whole-archive    -Wl,-no-whole-archive  /afs/ir.stanford.edu/users/r/p/rprabala/ee271/assignment/assignment2/gold/rastBBox_fix_sv.o  _vcsobj_1_1.o  5NrI_d.o 5NrIB_d.o SIM_l.o    rmapats_mop.o rmapats.o      /usr/class/ee/synopsys/vcs-mx/F-2011.12/amd64/lib/libvirsim.so /usr/class/ee/synopsys/vcs-mx/F-2011.12/amd64/lib/liberrorinf.so /usr/class/ee/synopsys/vcs-mx/F-2011.12/amd64/lib/libsnpsmalloc.so     /usr/class/ee/synopsys/vcs-mx/F-2011.12/amd64/lib/libvcsnew.so /usr/class/ee/synopsys/vcs-mx/F-2011.12/amd64/lib/libuclinative.so         /usr/class/ee/synopsys/vcs-mx/F-2011.12/amd64/lib/vcs_save_restore_new.o -ldl -lm  -lc -lpthread -ldl 
 ../simv up to date
-make[1]: Leaving directory `/afs/ir.stanford.edu/users/r/p/rprabala/EE271/assignment/assignment2/csrc'
-CPU time: .334 seconds to compile + .012 seconds to elab + .209 seconds to link
+make[1]: Leaving directory `/afs/ir.stanford.edu/users/r/p/rprabala/ee271/assignment/assignment2/csrc'
+CPU time: .676 seconds to compile + .077 seconds to elab + .295 seconds to link
