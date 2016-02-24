@@ -74,8 +74,8 @@
 //; 
 //; # local variables
 //; my $edges = ($verts == 3) ? 3 : 5 ;
-//; my $shortSF = $sig_fig;
-//; my $MRound = 2 * $shortSF - $radix;
+//; my $shortSF = $sig_fig-10;
+//; my $MRound = 2 * $shortSF - $radix + 6;
 
 
 /* A Note on Signal Names:
@@ -115,9 +115,11 @@ module  `mname()`
    // output for retiming registers	
    
    // Signals in Access Order  
-   logic signed [`$sig_fig`-1:0] 	 poly_shift_R16S[`$verts`-1:0][1:0]; // Micropolygon to Iterate Over    
-   logic signed [`$sig_fig`-1:0] 	 edge_R16S[`$edges`-1:0][1:0][1:0]; //Edges 
-   logic signed [2*`$shortSF`-1:0] 	 dist_lg_R16S[`$edges`-1:0];
+   logic signed [`$shortSF`-1:0] 	 poly_shift_R16S[`$verts`-1:0][1:0]; // Micropolygon to Iterate Over    
+   logic signed [`$shortSF`-1:0] 	 edge_R16S[`$edges`-1:0][1:0][1:0]; //Edges 
+   //logic signed [2*`$shortSF`-1:0]   dist_lg_R16S[`$edges`-1:0];
+   
+   logic signed [`$MRound`-1:0] 	 dist_lg_R16S[`$edges`-1:0];
    logic signed [`$MRound`-1:0] 	 dist_R16S[`$edges`-1:0];  
    logic [`$edges`-1:0] 		 edge_chk1_R16;
    logic 				 sample_hit_R16H ;

@@ -72,7 +72,7 @@
 //;                            Val=>3, Min=>1, Step=>1, 
 //;                            Doc=>"Number of color channels");
 //; my $pipe_depth = parameter(Name=>'PipelineDepth',
-//;                            Val=>1, Min=>1, Max=>2, Step=>1, 
+//;                            Val=>1, Min=>1, Max=>4, Step=>1, 
 //;                            Doc=>"How many pipe stages are in this block");
 //; my $mod_FSM = parameter(Name=>'ModifiedFSM',
 //;                            Val=>'NO', List=>['YES', 'NO'],
@@ -318,7 +318,7 @@ module `mname()`
    ////// next states
    //////
 
-   //; if ($mod_FSM eq 'YES') {
+   //; if ($mod_FSM eq 'NO') {
    
    ////// COMPLETE THE FOLLOW ALWAYS_COMB BLOCK
    always_comb begin

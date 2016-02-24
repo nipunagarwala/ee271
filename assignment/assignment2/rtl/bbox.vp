@@ -298,10 +298,13 @@ module `mname()`
 
    // Why is it a floor operation?
    //  TODO -> Explanation of why it is floor
+   logic [1:0] encode_subSample;
+   assign encode_subSample = {subSample_RnnnnU[3] | subSample_RnnnnU[2], subSample_RnnnnU[3] | subSample_RnnnnU[1]};
    
    //Round LowerLeft and UpperRight for X and Y
    //; for( my $i = 0 ; $i < 2 ; $i++ ) {
-   //; 	for( my $j = 0 ; $j < 2 ; $j++ ) {
+   //;   for( my $j = 0 ; $j < 2 ; $j++ ) {
+
    always_comb begin
       
       //Integer Portion of LL Remains the Same 
@@ -310,25 +313,48 @@ module `mname()`
 
       //Fractional Portion LL less than Subsample set to 0
       rounded_box_R10S[`$i`][`$j`][`$radix`-4:0] 
-	= `$radix-3`'b0;
+   = `$radix-3`'b0;
       
       //Mux for Correct Roundoff Point 
       assert( $onehot( subSample_RnnnnU )) else $fatal( "onehot\n");
+
+
+      rounded_box_R10S[`$i`][`$j`][`$radix`-1:`$radix`-3]  = (box_R10S[`$i`][`$j`][`$radix`-1:`$radix`-3] >> encode_subSample) << encode_subSample;
+
+end
+   always_comb begin
       
-      unique case( subSample_RnnnnU )
-	(4'b0001): // 64x MSAA
-	  rounded_box_R10S[`$i`][`$j`][`$radix`-1:`$radix`-3] 
-	       = { box_R10S[`$i`][`$j`][`$radix`-1:`$radix`-3] };  
-	(4'b0010): // 16x MSAA
-		 rounded_box_R10S[`$i`][`$j`][`$radix`-1:`$radix`-3] 
-	  = { box_R10S[`$i`][`$j`][`$radix`-1:`$radix`-2] , 1'b0 };  
-	(4'b0100): // 4x MSAA
-	    rounded_box_R10S[`$i`][`$j`][`$radix`-1:`$radix`-3] 
-	  = { box_R10S[`$i`][`$j`][`$radix`-1] , 2'b0 }; 
-	(4'b1000): // 1x MSAA
-	    rounded_box_R10S[`$i`][`$j`][`$radix`-1:`$radix`-3] 
-	  = { 3'b0 } ;
-      endcase // case ( subSample_RnnnnU )
+      //Integer Portion of LL Remains the Same 
+     //  rounded_box_R10S[`$i`][`$j`] 
+     // = box_R10S[`$i`][`$j`] & ~( (subSample_RnnnnU << (`$radix`-3)) -1);
+     //  //Integer Portion of LL Remains the Same 
+ //      rounded_box_R10S[`$i`][`$j`][`$sig_fig`-1:`$radix`] 
+ //     = box_R10S[`$i`][`$j`][`$sig_fig`-1:`$radix`];
+
+ //      //Fractional Portion LL less than Subsample set to 0
+ // //      rounded_box_R10S[`$i`][`$j`][`$radix`-1:0] 
+	// // = box_R10S[`$i`][`$j`][`$radix`-1:0] & ~( (subSample_RnnnnU << (`$radix`-3)) -1);;
+      
+ //      //      //Fractional Portion LL less than Subsample set to 0
+ //      rounded_box_R10S[`$i`][`$j`][`$radix`-4:0] 
+ //   = `$radix-3`'b0;
+ //      //Mux for Correct Roundoff Point 
+ //      assert( $onehot( subSample_RnnnnU )) else $fatal( "onehot\n");
+      
+ //      unique case( subSample_RnnnnU )
+	// (4'b0001): // 64x MSAA
+	//   rounded_box_R10S[`$i`][`$j`][`$radix`-1:`$radix`-3] 
+	//        = { box_R10S[`$i`][`$j`][`$radix`-1:`$radix`-3] };  
+	// (4'b0010): // 16x MSAA
+	// 	 rounded_box_R10S[`$i`][`$j`][`$radix`-1:`$radix`-3] 
+	//   = { box_R10S[`$i`][`$j`][`$radix`-1:`$radix`-2] , 1'b0 };  
+	// (4'b0100): // 4x MSAA
+	//     rounded_box_R10S[`$i`][`$j`][`$radix`-1:`$radix`-3] 
+	//   = { box_R10S[`$i`][`$j`][`$radix`-1] , 2'b0 }; 
+	// (4'b1000): // 1x MSAA
+	//     rounded_box_R10S[`$i`][`$j`][`$radix`-1:`$radix`-3] 
+	//   = { 3'b0 } ;
+ //      endcase // case ( subSample_RnnnnU )
       
       //Assertion Checks at end of Module
       
