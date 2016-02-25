@@ -1,0 +1,176 @@
+0.25
+0
+  slack (VIOLATED)                                                -0.0326
+Total Dynamic Power    =  90.9735 mW  (100%)
+                 Internal         Switching           Leakage            Total
+Total             81.0329 mW         9.9405 mW     2.7725e+07 nW       118.6991 mW
+Cell Leakage Power     =  27.7255 mW
+Total cell area:          34430.634328
+0.25
+0
+  slack (VIOLATED)                                                -0.0211
+Total Dynamic Power    =  76.5061 mW  (100%)
+                 Internal         Switching           Leakage            Total
+Total             69.0516 mW         7.4546 mW     2.0132e+07 nW        96.6384 mW
+Cell Leakage Power     =  20.1323 mW
+Total cell area:          27084.103463
+0.25
+0
+  slack (VIOLATED)                                                -0.0282
+Total Dynamic Power    =  74.0670 mW  (100%)
+                 Internal         Switching           Leakage            Total
+Total             67.1529 mW         6.9141 mW     1.8995e+07 nW        93.0618 mW
+Cell Leakage Power     =  18.9947 mW
+Total cell area:          25949.498653
+0.25
+0
+  slack (VIOLATED)                                 -0.0510
+Total Dynamic Power    =  67.1127 mW  (100%)
+                 Internal         Switching           Leakage            Total
+Total             60.8924 mW         6.2204 mW     1.6562e+07 nW        83.6745 mW
+Cell Leakage Power     =  16.5618 mW
+Total cell area:          23561.042596
+0.25
+0
+  slack (VIOLATED)                                 -0.0475
+Total Dynamic Power    =  66.4966 mW  (100%)
+                 Internal         Switching           Leakage            Total
+Total             60.2722 mW         6.2244 mW     1.6753e+07 nW        83.2493 mW
+Cell Leakage Power     =  16.7527 mW
+Total cell area:          23391.522218
+0.25
+0
+  slack (VIOLATED)                                 -0.0471
+Total Dynamic Power    =  67.1640 mW  (100%)
+                 Internal         Switching           Leakage            Total
+Total             61.3164 mW         5.8477 mW     1.6844e+07 nW        84.0079 mW
+Cell Leakage Power     =  16.8440 mW
+Total cell area:          23737.619013
+0.25
+0
+  slack (VIOLATED)                                 -0.0473
+Total Dynamic Power    =  60.2178 mW  (100%)
+                 Internal         Switching           Leakage            Total
+Total             54.0363 mW         6.1815 mW     1.6289e+07 nW        76.5069 mW
+Cell Leakage Power     =  16.2891 mW
+Total cell area:          22139.611427
+0.25
+0
+  slack (VIOLATED)                                 -0.0482
+Total Dynamic Power    =  60.3089 mW  (100%)
+                 Internal         Switching           Leakage            Total
+Total             54.0937 mW         6.2152 mW     1.6123e+07 nW        76.4323 mW
+Cell Leakage Power     =  16.1233 mW
+Total cell area:          22156.898630
+0.25
+0
+  slack (VIOLATED)                                 -0.0593
+Total Dynamic Power    =  58.2160 mW  (100%)
+                 Internal         Switching           Leakage            Total
+Total             52.1692 mW         6.0469 mW     1.6622e+07 nW        74.8381 mW
+Cell Leakage Power     =  16.6221 mW
+Total cell area:          22237.689848
+0.25
+0
+  slack (VIOLATED)                                                -0.0587
+Total Dynamic Power    =  61.2902 mW  (100%)
+                 Internal         Switching           Leakage            Total
+Total             55.0279 mW         6.2623 mW     1.6763e+07 nW        78.0534 mW
+Cell Leakage Power     =  16.7632 mW
+Total cell area:          22795.995836
+0.4
+0
+  slack (MET)                                                      0.0000
+Total Dynamic Power    =  36.3783 mW  (100%)
+                 Internal         Switching           Leakage            Total
+Total             32.7575 mW         3.6208 mW     1.5992e+07 nW        52.3700 mW
+Cell Leakage Power     =  15.9916 mW
+Total cell area:          21831.087859
+0.25
+0
+  slack (VIOLATED)                                 -0.0548
+Total Dynamic Power    =  62.3856 mW  (100%)
+                 Internal         Switching           Leakage            Total
+Total             56.1002 mW         6.2854 mW     1.6090e+07 nW        78.4752 mW
+Cell Leakage Power     =  16.0896 mW
+Total cell area:          22267.854209
+0.25
+0
+  slack (VIOLATED)                                 -0.0549
+Total Dynamic Power    =  62.0984 mW  (100%)
+                 Internal         Switching           Leakage            Total
+Total             56.0101 mW         6.0883 mW     1.5770e+07 nW        77.8686 mW
+Cell Leakage Power     =  15.7702 mW
+Total cell area:          22036.241013
+0.25
+0
+  slack (VIOLATED)                                                -0.0586
+Total Dynamic Power    =  79.7024 mW  (100%)
+                 Internal         Switching           Leakage            Total
+Total             70.3347 mW         9.3670 mW     2.5140e+07 nW       104.8418 mW
+Cell Leakage Power     =  25.1398 mW
+Total cell area:          31494.632711
+0.25
+0
+  slack (VIOLATED)                                                -0.0838
+Total Dynamic Power    =  80.2510 mW  (100%)
+                 Internal         Switching           Leakage            Total
+Total             71.1550 mW         9.0954 mW     2.4769e+07 nW       105.0201 mW
+Cell Leakage Power     =  24.7693 mW
+Total cell area:          31465.350341
+0.29
+0
+  slack (VIOLATED)                                 -0.0154
+Total Dynamic Power    =  53.0378 mW  (100%)
+                 Internal         Switching           Leakage            Total
+Total             47.3912 mW         5.6466 mW     1.7585e+07 nW        70.6227 mW
+Cell Leakage Power     =  17.5850 mW
+Total cell area:          23565.629032
+0.29
+0
+  slack (VIOLATED)                                                -0.0069
+Total Dynamic Power    =   1.8175  W  (100%)
+                 Internal         Switching           Leakage            Total
+Total             37.5277 mW     1.7799e+03 mW     9.9491e+06 nW     1.8274e+03 mW
+Cell Leakage Power     =   9.9491 mW
+Total cell area:          16483.521916
+0.29
+0
+  slack (VIOLATED)                                                -0.0062
+Total Dynamic Power    =   1.8107  W  (100%)
+                 Internal         Switching           Leakage            Total
+Total             31.0270 mW     1.7797e+03 mW     8.7306e+06 nW     1.8195e+03 mW
+Cell Leakage Power     =   8.7306 mW
+Total cell area:          14095.065845
+0.29
+0
+  slack (VIOLATED)                                                -0.0030
+Total Dynamic Power    =   1.8107  W  (100%)
+                 Internal         Switching           Leakage            Total
+Total             31.0349 mW     1.7796e+03 mW     8.4858e+06 nW     1.8192e+03 mW
+Cell Leakage Power     =   8.4859 mW
+Total cell area:          13775.781841
+0.29
+0
+  slack (VIOLATED)                                 -0.0125
+Total Dynamic Power    =  61.9669 mW  (100%)
+                 Internal         Switching           Leakage            Total
+Total             55.8060 mW         6.1611 mW     2.1521e+07 nW        83.4877 mW
+Cell Leakage Power     =  21.5213 mW
+Total cell area:          28236.524588
+0.28
+0
+  slack (VIOLATED)                                 -0.0191
+Total Dynamic Power    =  68.5755 mW  (100%)
+                 Internal         Switching           Leakage            Total
+Total             61.6012 mW         6.9742 mW     2.1981e+07 nW        90.5561 mW
+Cell Leakage Power     =  21.9809 mW
+Total cell area:          29017.094615
+0.28
+0
+  slack (MET)                                                      0.0000
+Total Dynamic Power    =  72.9719 mW  (100%)
+                 Internal         Switching           Leakage            Total
+Total             66.5537 mW         6.4183 mW     2.1735e+07 nW        94.7071 mW
+Cell Leakage Power     =  21.7354 mW
+Total cell area:          29824.653920

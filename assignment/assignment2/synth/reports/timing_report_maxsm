@@ -1,0 +1,62 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : rast
+Version: G-2012.06-SP5-1
+Date   : Wed Feb 24 16:04:05 2016
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: MLCOM   Library: tcbn45gsbwpml
+Wire Load Model Mode: top
+
+  Startpoint: sampletest/DP_OP_27J1_124_6167/clk_r_REG716_S10
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sampletest/DP_OP_27J1_124_6167/clk_r_REG8_S8
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  rast               TSMC32K_Lowk_Conservative
+                                           tcbn45gsbwpml
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                 0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  sampletest/DP_OP_27J1_124_6167/clk_r_REG716_S10/CP (DFCNQD4BWP)
+                                                        0.0000 #   0.0000 r
+  sampletest/DP_OP_27J1_124_6167/clk_r_REG716_S10/Q (DFCNQD4BWP)
+                                                        0.0485     0.0485 r
+  U7006/ZN (INVD12BWP)                                  0.0098     0.0583 f
+  U7007/Z (DCCKBD16BWP)                                 0.0167     0.0750 f
+  sampletest/DP_OP_27J1_124_6167/U4149/ZN (XNR2D2BWP)   0.0301     0.1051 r
+  U5566/ZN (OAI22D1BWP)                                 0.0142     0.1193 f
+  sampletest/DP_OP_27J1_124_6167/U3621/Z (XOR3D1BWP)    0.0534     0.1727 r
+  U4784/Z (XOR3D4BWP)                                   0.0267     0.1994 f
+  U4783/ZN (XNR4D2BWP)                                  0.0407     0.2401 f
+  U4782/Z (CKXOR2D1BWP)                                 0.0294     0.2695 r
+  sampletest/DP_OP_27J1_124_6167/clk_r_REG8_S8/D (DFSNQD1BWP)
+                                                        0.0000     0.2695 r
+  data arrival time                                                0.2695
+
+  clock clk (rise edge)                                 0.2800     0.2800
+  clock network delay (ideal)                           0.0000     0.2800
+  sampletest/DP_OP_27J1_124_6167/clk_r_REG8_S8/CP (DFSNQD1BWP)
+                                                        0.0000     0.2800 r
+  library setup time                                   -0.0105     0.2695
+  data required time                                               0.2695
+  --------------------------------------------------------------------------
+  data required time                                               0.2695
+  data arrival time                                               -0.2695
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0000
+
+
+1

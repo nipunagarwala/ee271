@@ -170,6 +170,7 @@ module `mname()`
    logic signed [`$sig_fig`-1:0] 	box_R13S_retime[1:0][1:0];             // 2 Sets X,Y Fixed Point Values  
    logic 				isQuad_R13H_retime;                   // Is Poly Quad?
    logic 				validPoly_R13H_retime ;                 // Valid Data for Operation
+    logic frontfacing;
    // output for retiming registers
 
    //; # if( $verts == 4 ) {
@@ -187,6 +188,10 @@ module `mname()`
     * */
 
    //; if( $verts == 3 ) {
+   // always_comb begin
+   //    frontfacing = ((poly_R10S[1][0] - poly_R10S[0][0])*(poly_R10S[2][1] - poly_R10S[1][1]) -
+   //    (poly_R10S[2][0] - poly_R10S[1][0])*(poly_R10S[1][1] - poly_R10S[0][1]) <= 0);
+   // end
 
    //Note: <= might be faster than < and functionally equivelant here
    always_comb begin
@@ -298,63 +303,66 @@ module `mname()`
 
    // Why is it a floor operation?
    //  TODO -> Explanation of why it is floor
-   logic [1:0] encode_subSample;
-   assign encode_subSample = {subSample_RnnnnU[3] | subSample_RnnnnU[2], subSample_RnnnnU[3] | subSample_RnnnnU[1]};
+//    logic [1:0] encode_subSample;
+//    assign encode_subSample = {subSample_RnnnnU[3] | subSample_RnnnnU[2], subSample_RnnnnU[3] | subSample_RnnnnU[1]};
    
-   //Round LowerLeft and UpperRight for X and Y
+//    //Round LowerLeft and UpperRight for X and Y
    //; for( my $i = 0 ; $i < 2 ; $i++ ) {
    //;   for( my $j = 0 ; $j < 2 ; $j++ ) {
 
+//    always_comb begin
+      
+//       //Integer Portion of LL Remains the Same 
+//       rounded_box_R10S[`$i`][`$j`][`$sig_fig`-1:`$radix`] 
+//      = box_R10S[`$i`][`$j`][`$sig_fig`-1:`$radix`];
+
+//       //Fractional Portion LL less than Subsample set to 0
+//       rounded_box_R10S[`$i`][`$j`][`$radix`-4:0] 
+//    = `$radix-3`'b0;
+      
+//       //Mux for Correct Roundoff Point 
+//       assert( $onehot( subSample_RnnnnU )) else $fatal( "onehot\n");
+
+
+//       rounded_box_R10S[`$i`][`$j`][`$radix`-1:`$radix`-3]  = (box_R10S[`$i`][`$j`][`$radix`-1:`$radix`-3] >> encode_subSample) << encode_subSample;
+
+// end
    always_comb begin
+      
+      // Use mask instead of case statement
+     //  rounded_box_R10S[`$i`][`$j`] 
+     // = box_R10S[`$i`][`$j`] & ~( (subSample_RnnnnU << (`$radix`-3)) -1);
+     
+     // OLD CODE----
+
+
+ //      //Fractional Portion LL less than Subsample set to 0
+ // //      rounded_box_R10S[`$i`][`$j`][`$radix`-1:0] 
+   // // = box_R10S[`$i`][`$j`][`$radix`-1:0] & ~( (subSample_RnnnnU << (`$radix`-3)) -1);;
       
       //Integer Portion of LL Remains the Same 
       rounded_box_R10S[`$i`][`$j`][`$sig_fig`-1:`$radix`] 
      = box_R10S[`$i`][`$j`][`$sig_fig`-1:`$radix`];
-
-      //Fractional Portion LL less than Subsample set to 0
+      //      //Fractional Portion LL less than Subsample set to 0
       rounded_box_R10S[`$i`][`$j`][`$radix`-4:0] 
    = `$radix-3`'b0;
-      
       //Mux for Correct Roundoff Point 
       assert( $onehot( subSample_RnnnnU )) else $fatal( "onehot\n");
-
-
-      rounded_box_R10S[`$i`][`$j`][`$radix`-1:`$radix`-3]  = (box_R10S[`$i`][`$j`][`$radix`-1:`$radix`-3] >> encode_subSample) << encode_subSample;
-
-end
-   always_comb begin
       
-      //Integer Portion of LL Remains the Same 
-     //  rounded_box_R10S[`$i`][`$j`] 
-     // = box_R10S[`$i`][`$j`] & ~( (subSample_RnnnnU << (`$radix`-3)) -1);
-     //  //Integer Portion of LL Remains the Same 
- //      rounded_box_R10S[`$i`][`$j`][`$sig_fig`-1:`$radix`] 
- //     = box_R10S[`$i`][`$j`][`$sig_fig`-1:`$radix`];
-
- //      //Fractional Portion LL less than Subsample set to 0
- // //      rounded_box_R10S[`$i`][`$j`][`$radix`-1:0] 
-	// // = box_R10S[`$i`][`$j`][`$radix`-1:0] & ~( (subSample_RnnnnU << (`$radix`-3)) -1);;
-      
- //      //      //Fractional Portion LL less than Subsample set to 0
- //      rounded_box_R10S[`$i`][`$j`][`$radix`-4:0] 
- //   = `$radix-3`'b0;
- //      //Mux for Correct Roundoff Point 
- //      assert( $onehot( subSample_RnnnnU )) else $fatal( "onehot\n");
-      
- //      unique case( subSample_RnnnnU )
-	// (4'b0001): // 64x MSAA
-	//   rounded_box_R10S[`$i`][`$j`][`$radix`-1:`$radix`-3] 
-	//        = { box_R10S[`$i`][`$j`][`$radix`-1:`$radix`-3] };  
-	// (4'b0010): // 16x MSAA
-	// 	 rounded_box_R10S[`$i`][`$j`][`$radix`-1:`$radix`-3] 
-	//   = { box_R10S[`$i`][`$j`][`$radix`-1:`$radix`-2] , 1'b0 };  
-	// (4'b0100): // 4x MSAA
-	//     rounded_box_R10S[`$i`][`$j`][`$radix`-1:`$radix`-3] 
-	//   = { box_R10S[`$i`][`$j`][`$radix`-1] , 2'b0 }; 
-	// (4'b1000): // 1x MSAA
-	//     rounded_box_R10S[`$i`][`$j`][`$radix`-1:`$radix`-3] 
-	//   = { 3'b0 } ;
- //      endcase // case ( subSample_RnnnnU )
+      unique case( subSample_RnnnnU )
+	(4'b0001): // 64x MSAA
+	  rounded_box_R10S[`$i`][`$j`][`$radix`-1:`$radix`-3] 
+	       = { box_R10S[`$i`][`$j`][`$radix`-1:`$radix`-3] };  
+	(4'b0010): // 16x MSAA
+		 rounded_box_R10S[`$i`][`$j`][`$radix`-1:`$radix`-3] 
+	  = { box_R10S[`$i`][`$j`][`$radix`-1:`$radix`-2] , 1'b0 };  
+	(4'b0100): // 4x MSAA
+	    rounded_box_R10S[`$i`][`$j`][`$radix`-1:`$radix`-3] 
+	  = { box_R10S[`$i`][`$j`][`$radix`-1] , 2'b0 }; 
+	(4'b1000): // 1x MSAA
+	    rounded_box_R10S[`$i`][`$j`][`$radix`-1:`$radix`-3] 
+	  = { 3'b0 } ;
+      endcase // case ( subSample_RnnnnU )
       
       //Assertion Checks at end of Module
       
@@ -399,7 +407,7 @@ end
    end
    //Select Between Screen Bounds and Rounded Bounds
    
-   assign  outvalid_R10H = ~( | invalidate_R10H ) & validPoly_R10H ;
+   assign  outvalid_R10H = ~( | invalidate_R10H ) & validPoly_R10H;// & frontfacing;
 
    
    //Flop Clamped Box to R13_retime with retiming registers

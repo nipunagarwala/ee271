@@ -51,7 +51,7 @@
 //;                            Val=>3, Min=>1, Step=>1, 
 //;                            Doc=>"Number of Pipe Stages in bbox module");
 //; my $pipes_iter = parameter(Name=>'PipesIter',
-//;                            Val=>2, Min=>1, Step=>1, 
+//;                            Val=>1, Min=>1, Step=>1, 
 //;                            Doc=>"Number of Pipe Stages in iter module");
 //; my $pipes_hash = parameter(Name=>'PipesHash',
 //;                            Val=>2, Min=>1, Step=>1, 
