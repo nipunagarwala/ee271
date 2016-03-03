@@ -186,14 +186,25 @@ module `mname()`
     * to evaluate N-vertice draw calls,
     * talk with John B.
     * */
+    logic signed [`$sig_fig`-12:0] poly_x2_x1, poly_y3_y2, poly_x3_x2, poly_y2_y1;
+    logic signed [24:0] prod1, prod2;
+    assign poly_x2_x1 = poly_R10S[1][0][`$sig_fig`-12:0] - poly_R10S[0][0][`$sig_fig`-12:0];
+    assign poly_y3_y2 = poly_R10S[2][1][`$sig_fig`-12:0] - poly_R10S[1][1][`$sig_fig`-12:0];
+    assign poly_x3_x2 = poly_R10S[2][0][`$sig_fig`-12:0] - poly_R10S[1][0][`$sig_fig`-12:0];
+    assign poly_y2_y1 = poly_R10S[1][1][`$sig_fig`-12:0] - poly_R10S[0][1][`$sig_fig`-12:0];
+    assign prod1 = (poly_x2_x1 * poly_y3_y2);
+    assign prod2 = poly_x3_x2 * poly_y2_y1;
+    assign frontfacing = (prod1 - prod2) <= 0;
+    // assign frontfacing = 1;
 
    //; if( $verts == 3 ) {
    // always_comb begin
-   //    frontfacing = ((poly_R10S[1][0] - poly_R10S[0][0])*(poly_R10S[2][1] - poly_R10S[1][1]) -
-   //    (poly_R10S[2][0] - poly_R10S[1][0])*(poly_R10S[1][1] - poly_R10S[0][1]) <= 0);
+   // // frontfacing = 1;
+   //    frontfacing = ($signed({poly_R10S[1][0][`$sig_fig`-1], poly_R10S[1][0][`$sig_fig`-5:0]}  - {poly_R10S[0][0][`$sig_fig`-1], poly_R10S[0][0][`$sig_fig`-5:0]})*$signed({poly_R10S[2][1][`$sig_fig`-1], poly_R10S[2][1][`$sig_fig`-5:0]} - {poly_R10S[1][1][`$sig_fig`-1], poly_R10S[1][1][`$sig_fig`-5:0]} ) -
+   //    $signed({poly_R10S[2][0][`$sig_fig`-1], poly_R10S[2][0][`$sig_fig`-5:0]} - {poly_R10S[1][0][`$sig_fig`-1], poly_R10S[1][0][`$sig_fig`-5:0]})*$signed({poly_R10S[1][1][`$sig_fig`-1], poly_R10S[1][1][`$sig_fig`-5:0]} - {poly_R10S[0][1][`$sig_fig`-1], poly_R10S[0][1][`$sig_fig`-5:0]}) <= 0);
    // end
 
-   //Note: <= might be faster than < and functionally equivelant here
+   //Note: <= might be faster than < and functionally equivalent here
    always_comb begin
       //Compare X
       cmp_R10H[0][0] =  poly_R10S[0][0] <=  poly_R10S[1][0] ;
@@ -407,7 +418,7 @@ module `mname()`
    end
    //Select Between Screen Bounds and Rounded Bounds
    
-   assign  outvalid_R10H = ~( | invalidate_R10H ) & validPoly_R10H ;//& frontfacing;
+   assign  outvalid_R10H = ~( | invalidate_R10H ) & validPoly_R10H & frontfacing;
 
    
    //Flop Clamped Box to R13_retime with retiming registers
