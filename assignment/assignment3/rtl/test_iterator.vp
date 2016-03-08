@@ -57,10 +57,10 @@
  * ***************************************************************************/
 //; # module parameters
 //; my $sig_fig    = parameter(Name=>'SigFig',
-//;                            Val=>12, Min=>1, Step=>1, 
+//;                            Val=>24, Min=>1, Step=>1, 
 //;                            Doc=>"Bits in color and position.");
 //; my $radix      = parameter(Name=>'Radix',
-//;                            Val=>3, Min=>1, Step=>1, 
+//;                            Val=>10, Min=>1, Step=>1, 
 //;                            Doc=>"Fraction bits in color and position");
 //; my $verts      = parameter(Name=>'Vertices',
 //;                            Val=>3, Min=>3, Step=>1, 
@@ -261,43 +261,6 @@ module `mname()`
 
    // box arranged: [width] box[low(0)or high(1)][x(0) or y(1)] 
 
-   // use the helper signals to get status of sample
-//   integer [23:0] convert;
-   // always_comb begin
-   //    unique case (subSample_RnnnnU)
-   //    4'b0001: begin
-   //    next_up_samp_R14S[1] = sample_R14S[1] + (1 << `$radix` - 3);
-   //    next_up_samp_R14S[0] = box_R14S[0][0];
-      
-   //    next_rt_samp_R14S[0] = sample_R14S[0] + (1 << `$radix` - 3);
-   //    next_rt_samp_R14S[1] = sample_R14S[1]; 
-
-   //    end
-   //    4'b0010: begin
-   //    next_up_samp_R14S[1] = sample_R14S[1] + (1 << `$radix` - 2);
-   //    next_up_samp_R14S[0] = box_R14S[0][0];
-      
-   //    next_rt_samp_R14S[0] = sample_R14S[0] + (1 << `$radix` - 2);
-   //    next_rt_samp_R14S[1] = sample_R14S[1]; 
-
-   //    end
-   //    4'b0100: begin
-   //    next_up_samp_R14S[1] = sample_R14S[1] + (1 << `$radix` - 1);
-   //    next_up_samp_R14S[0] = box_R14S[0][0];
-      
-   //    next_rt_samp_R14S[0] = sample_R14S[0] + (1 << `$radix` - 1);
-   //    next_rt_samp_R14S[1] = sample_R14S[1]; 
-
-   //    end
-   //    4'b1000: begin
-   //    next_up_samp_R14S[1] = sample_R14S[1] + (1 << `$radix`);
-   //    next_up_samp_R14S[0] = box_R14S[0][0];
-      
-   //    next_rt_samp_R14S[0] = sample_R14S[0] + (1 << `$radix`);
-   //    next_rt_samp_R14S[1] = sample_R14S[1]; 
-
-   //    end
-   //    endcase
    always_comb begin
       next_up_samp_R14S[1] = sample_R14S[1] + (subSample_RnnnnU << (`$radix` - 3));
       next_up_samp_R14S[0] = box_R14S[0][0];
