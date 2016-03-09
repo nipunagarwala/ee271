@@ -217,7 +217,7 @@ module `mname()`
    
 
    
-   //; if ($mod_FSM eq 'YES') {
+   //; if ($mod_FSM eq 'NO') {
    
    //////
    //////  RTL code for original FSM Goes Here
@@ -289,27 +289,27 @@ module `mname()`
    logic isvalid;
 
    always_comb begin
-      next_up_samp_R14S[1] = sample_R14S[1] + (subSample_RnnnnU << (`$radix` - 2));
+      next_up_samp_R14S[1] = sample_R14S[1] + (subSample_RnnnnU << (`$radix` - 3));
       next_up_samp_R14S[0] = box_R14S[0][0];
       
       next_rt_samp_R14S[0] = sample_R14S[0] + (subSample_RnnnnU << (`$radix` - 3));
       next_rt_samp_R14S[1] = sample_R14S[1]; 
 
-      next_up_samp1_R14S[1] = sample1_R14S[1] + (subSample_RnnnnU << (`$radix` - 2));
-      next_up_samp1_R14S[0] = box_R14S[0][0];
+      next_up_samp1_R14S[1] = sample1_R14S[1] - (subSample_RnnnnU << (`$radix` - 3));
+      next_up_samp1_R14S[0] = box_R14S[1][0];
       
-      next_rt_samp1_R14S[0] = sample1_R14S[0] + (subSample_RnnnnU << (`$radix` - 3));
+      next_rt_samp1_R14S[0] = sample1_R14S[0] - (subSample_RnnnnU << (`$radix` - 3));
       next_rt_samp1_R14S[1] = sample1_R14S[1]; 
 
-      at_top_edg_R14H = (sample_R14S[1] >= box_R14S[1][1] - (subSample_RnnnnU << (`$radix` - 3)));
+      at_top_edg_R14H = (sample_R14S[1] >= box_R14S[1][1]);// - (subSample_RnnnnU << (`$radix` - 3)));
       at_right_edg_R14H = (sample_R14S[0] == box_R14S[1][0]);
-      at_end_box_R14H = at_top_edg_R14H && at_right_edg_R14H;
+      at_end_box_R14H = (at_top_edg_R14H && at_right_edg_R14H) || ((sample_R14S[1] == sample1_R14S[1]) & (sample_R14S[0] >= sample1_R14S[0])) || (sample_R14S[1] > sample1_R14S[1]);
       isvalid = (sample_R14S[1] <= box_R14S[1][1]);
 
-      at_top_edg1_R14H = (sample1_R14S[1] >= box_R14S[1][1]);
-      at_right_edg1_R14H = (sample1_R14S[0] == box_R14S[1][0]);
+      at_top_edg1_R14H = (sample1_R14S[1] <= box_R14S[0][1]);
+      at_right_edg1_R14H = (sample1_R14S[0] == box_R14S[0][0]);
       at_end_box1_R14H = at_top_edg1_R14H && at_right_edg1_R14H;
-      is1valid = (sample1_R14S[1] <= box_R14S[1][1]);
+      is1valid = (sample1_R14S[1] >= box_R14S[0][1]);
    end  
    
    //////
@@ -325,10 +325,10 @@ module `mname()`
 	   next_sample_R14S[0]    = box_R13S[0][0];
       next_sample_R14S[1]    = box_R13S[0][1];
 
-      next_sample1_R14S[0]    = box_R13S[0][0];
-      next_sample1_R14S[1]    = box_R13S[0][1] + (subSample_RnnnnU << (`$radix` - 3));
+      next_sample1_R14S[0]    = box_R13S[1][0];
+      next_sample1_R14S[1]    = box_R13S[1][1];// + (subSample_RnnnnU << (`$radix` - 3));
 
-	   next_validSamp_R14H = validPoly_R13H;
+	   next_validSamp_R14H = validPoly_R13H  ;
       next_validSamp1_R14H = validPoly_R13H;
 
 	   next_isQuad_R14H    = isQuad_R13H;   
@@ -345,11 +345,11 @@ module `mname()`
 	   next_sample_R14S[0]    = !at_end_box_R14H ? (at_right_edg_R14H ? next_up_samp_R14S[0] : next_rt_samp_R14S[0]) : box_R14S[0][0];
       next_sample_R14S[1]    = !at_end_box_R14H ? (at_right_edg_R14H ? next_up_samp_R14S[1] : next_rt_samp_R14S[1]) : box_R14S[0][1];
 
-      next_sample1_R14S[0]    = !at_end_box1_R14H ? (at_right_edg1_R14H ? next_up_samp1_R14S[0] : next_rt_samp1_R14S[0]) : box_R14S[0][0];
-      next_sample1_R14S[1]    = !at_end_box1_R14H ? (at_right_edg1_R14H ? next_up_samp1_R14S[1] : next_rt_samp1_R14S[1]) : box_R14S[0][1];
+      next_sample1_R14S[0]    = at_right_edg1_R14H ? next_up_samp1_R14S[0] : next_rt_samp1_R14S[0];
+      next_sample1_R14S[1]    = at_right_edg1_R14H ? next_up_samp1_R14S[1] : next_rt_samp1_R14S[1];
 
 	   next_validSamp_R14H = !at_end_box_R14H && isvalid; 
-      next_validSamp1_R14H = !at_end_box1_R14H && is1valid;
+      next_validSamp1_R14H = !at_end_box_R14H && is1valid;
 
 
 	   next_isQuad_R14H    = isQuad_R14H;
