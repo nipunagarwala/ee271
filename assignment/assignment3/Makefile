@@ -201,9 +201,8 @@ DESIGN_TARGET = rast
 
 # The target clock period and area in library units (nS) (um^2). 45 
 # you should be able to achieve 0.3ns clock rate by adjusting pipeline depths
-CLK_PERIOD=0.28; 
+CLK_PERIOD=0.55; 
 TARGET_AREA=40000;
-
 
 # flags for dc/icc
 SYNTH_HOME	= $(DESIGN_HOME)/synth
