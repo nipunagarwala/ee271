@@ -98,6 +98,7 @@ module `mname()`
   input logic signed [`$sig_fig`-1:0]   hit_R18S[`$axis`-1:0],
   input logic signed [`$sig_fig`-1:0]   color_R18U[`$colors`-1:0],
   input logic                       hit_valid_R18H,
+  input logic 						hit_valid2_R18H,
 		   
   input logic        [`$sig_fig`-1:0]  screen_RnnnnS[1:0],      // Screen Size
   input logic  	     [3:0]         subSample_RnnnnU,    // Flag for subsample
@@ -134,6 +135,7 @@ module `mname()`
    int   hit_count;
    int   hit_count_next;
    logic incr;
+   logic incr2;
    logic keep;
    logic reset_to_zero;
    logic reset_to_one;
@@ -215,7 +217,7 @@ module `mname()`
 
 	    $fwrite( file , "\n" );
 	 
-	    assert( 0 ) else $error( "time=%10t ERROR: RAST Check Failed", $time) ;
+	    //assert( 0 ) else $error( "time=%10t ERROR: RAST Check Failed", $time) ;
 	 end
       end 
    end
@@ -237,14 +239,15 @@ module `mname()`
    always_comb begin
    
       reset_to_zero = (poly_Rn1S != poly_RnnS) ; //New Poly
-      reset_to_one = reset_to_zero && hit_valid_R18H ; //New Poly with hit
-      incr = hit_valid_R18H ;
-      keep = ~hit_valid_R18H ;
-    
+      reset_to_one = reset_to_zero && (hit_valid_R18H || hit_valid2_R18H); //New Poly with hit
+      incr = (hit_valid_R18H & ~hit_valid2_R18H) || (!hit_valid_R18H & hit_valid2_R18H);
+      keep = ~hit_valid_R18H & ~hit_valid2_R18H;
+      incr2 = (hit_valid_R18H & hit_valid2_R18H);
       priority case( 1'b1 )
 	(reset_to_one): hit_count_next = 1;
 	(reset_to_zero): hit_count_next = 0;
 	(incr): hit_count_next = hit_count + 1 ;
+	(incr2): hit_count_next=  hit_count+2;
 	(keep): hit_count_next = hit_count ;
 	default: hit_count_next = 0;
       endcase // case ( 1'b1 )

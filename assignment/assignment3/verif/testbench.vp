@@ -243,7 +243,7 @@ module `mname()`
 			 .hit_R18S(hit_R18S),
 			 .color_R18U(color_R18U),         // Polygon Color			      
 			 .hit_valid_R18H(hit_valid_R18H) ,
-
+			 .hit_valid2_R18H(hit_valid2_R18H),
 		 	 .screen_RnnnnS(screen_RnnnnS),         // Screen Size
 	                 .subSample_RnnnnU(subSample_RnnnnU),    // Flag for subsample
 							   
