@@ -1,4 +1,4 @@
-module lab10_part2(
+module bresenham(
   input clk,
   input resetn,
   input [8:0] x0,
