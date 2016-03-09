@@ -136,8 +136,12 @@ module `mname()`
    output logic signed [`$sig_fig`-1:0] poly_R14S[`$verts`-1:0][`$axis`-1:0], //Micropolygon to Sample Test
    output logic unsigned [`$sig_fig`-1:0] color_R14U[`$colors`-1:0] , //Color of Poly
    output logic signed [`$sig_fig`-1:0] sample_R14S[1:0], //Sample Location to Be Tested
+   output logic signed [`$sig_fig`-1:0] sample1_R14S[1:0], //Sample Location to Be Tested
+
    output logic 			isQuad_R14H, //Micropygon is quad
-   output logic 			validSamp_R14H                   //Sample and Micropolygon are Valid
+   output logic 			validSamp_R14H,                   //Sample and Micropolygon are Valid
+   output logic         validSamp1_R14H                   //Sample and Micropolygon are Valid
+
    );
    
    
@@ -152,8 +156,12 @@ module `mname()`
    logic signed [`$sig_fig`-1:0] 	next_poly_R14S[`$verts`-1:0][`$axis`-1:0]; 
    logic unsigned  [`$sig_fig`-1:0] next_color_R14U[`$colors`-1:0] ;
    logic signed [`$sig_fig`-1:0] 	next_sample_R14S[1:0];  
+   logic signed [`$sig_fig`-1:0]    next_sample1_R14S[1:0];  
+
    logic 				next_isQuad_R14H;                   
-   logic 				next_validSamp_R14H;                 
+   logic 				next_validSamp_R14H;
+   logic             next_validSamp1_R14H;                 
+
    logic 				next_halt_RnnnnL;
    
    
@@ -188,15 +196,23 @@ module `mname()`
 			   .in(next_sample_R14S) , 
 			   .clk(clk) , .reset(rst), .en(1'b1),
 			   .out(sample_R14S));				 
-   
+   //; my $d405 = generate( 'dff2', "d405", 
+   //;                        BitWidth=>$sig_fig,
+   //;                        ArraySize1=>2,
+   //;                        PipelineDepth=>1,
+   //;                        Retime=>'NO' );
+   `$d405->instantiate()` (
+            .in(next_sample1_R14S) , 
+            .clk(clk) , .reset(rst), .en(1'b1),
+            .out(sample1_R14S));     
    //; my $d304 = generate( 'dff', "d304", 
-   //;                        BitWidth=>3,
+   //;                        BitWidth=>4,
    //;                        PipelineDepth=>1,
    //;                        Retime=>'NO' );
    `$d304->instantiate()` (
-			   .in({next_validSamp_R14H, next_isQuad_R14H, next_halt_RnnnnL}) , 
+			   .in({next_validSamp_R14H, next_validSamp1_R14H, next_isQuad_R14H, next_halt_RnnnnL}) , 
 			   .clk(clk) , .reset(rst), .en(1'b1),
-			   .out({validSamp_R14H, isQuad_R14H, halt_RnnnnL}));
+			   .out({validSamp_R14H, validSamp1_R14H, isQuad_R14H, halt_RnnnnL}));
    // Instantiate registers for storing these states
    
 
@@ -245,9 +261,17 @@ module `mname()`
    // define some helper signals
    logic signed [`$sig_fig`-1:0]    next_up_samp_R14S[1:0]; //If jump up, next sample
    logic signed [`$sig_fig`-1:0]    next_rt_samp_R14S[1:0]; //If jump right, next sample
+
+   logic signed [`$sig_fig`-1:0]    next_up_samp1_R14S[1:0]; //If jump up, next sample
+   logic signed [`$sig_fig`-1:0]    next_rt_samp1_R14S[1:0]; //If jump right, next sample
+
    logic             at_right_edg_R14H;      //Current sample at right edge of bbox?
    logic             at_top_edg_R14H;        //Current sample at top edge of bbox?
    logic             at_end_box_R14H;        //Current sample at end of bbox?
+
+   logic             at_right_edg1_R14H;      //Current sample at right edge of bbox?
+   logic             at_top_edg1_R14H;        //Current sample at top edge of bbox?
+   logic             at_end_box1_R14H;        //Current sample at end of bbox?
 
    //////
    ////// First calculate the values of the helper signals using CURRENT STATES
@@ -260,20 +284,31 @@ module `mname()`
    ////// PLACE YOUR CODE HERE
 
    // box arranged: [width] box[low(0)or high(1)][x(0) or y(1)] 
+   logic is1valid;
+   logic isvalid;
 
    always_comb begin
-      next_up_samp_R14S[1] = sample_R14S[1] + (subSample_RnnnnU << (`$radix` - 3));
+      next_up_samp_R14S[1] = sample_R14S[1] + (subSample_RnnnnU << (`$radix` - 2));
       next_up_samp_R14S[0] = box_R14S[0][0];
       
       next_rt_samp_R14S[0] = sample_R14S[0] + (subSample_RnnnnU << (`$radix` - 3));
       next_rt_samp_R14S[1] = sample_R14S[1]; 
 
+      next_up_samp1_R14S[1] = sample1_R14S[1] + (subSample_RnnnnU << (`$radix` - 2));
+      next_up_samp1_R14S[0] = box_R14S[0][0];
+      
+      next_rt_samp1_R14S[0] = sample1_R14S[0] + (subSample_RnnnnU << (`$radix` - 3));
+      next_rt_samp1_R14S[1] = sample1_R14S[1]; 
 
-      at_top_edg_R14H = (sample_R14S[1] == box_R14S[1][1]);
-
+      at_top_edg_R14H = (sample_R14S[1] >= box_R14S[1][1] - (subSample_RnnnnU << (`$radix` - 3)));
       at_right_edg_R14H = (sample_R14S[0] == box_R14S[1][0]);
-
       at_end_box_R14H = at_top_edg_R14H && at_right_edg_R14H;
+      isvalid = (sample_R14S[1] <= box_R14S[1][1]);
+
+      at_top_edg1_R14H = (sample1_R14S[1] >= box_R14S[1][1]);
+      at_right_edg1_R14H = (sample1_R14S[0] == box_R14S[1][0]);
+      at_end_box1_R14H = at_top_edg1_R14H && at_right_edg1_R14H;
+      is1valid = (sample1_R14S[1] <= box_R14S[1][1]);
    end  
    
    //////
@@ -290,7 +325,12 @@ module `mname()`
 	   next_sample_R14S[0]    = box_R13S[0][0];
       next_sample_R14S[1]    = box_R13S[0][1];
 
+      next_sample1_R14S[0]    = box_R13S[0][0];
+      next_sample1_R14S[1]    = box_R13S[0][1] + (subSample_RnnnnU << (`$radix` - 3));
+
 	   next_validSamp_R14H = validPoly_R13H;
+      next_validSamp1_R14H = validPoly_R13H;
+
 	   next_isQuad_R14H    = isQuad_R13H;   
       next_state_R14H     = validPoly_R13H ? TEST_STATE : WAIT_STATE;      
 
@@ -305,7 +345,13 @@ module `mname()`
 	   next_sample_R14S[0]    = !at_end_box_R14H ? (at_right_edg_R14H ? next_up_samp_R14S[0] : next_rt_samp_R14S[0]) : box_R14S[0][0];
       next_sample_R14S[1]    = !at_end_box_R14H ? (at_right_edg_R14H ? next_up_samp_R14S[1] : next_rt_samp_R14S[1]) : box_R14S[0][1];
 
-	   next_validSamp_R14H = !at_end_box_R14H;
+      next_sample1_R14S[0]    = !at_end_box1_R14H ? (at_right_edg1_R14H ? next_up_samp1_R14S[0] : next_rt_samp1_R14S[0]) : box_R14S[0][0];
+      next_sample1_R14S[1]    = !at_end_box1_R14H ? (at_right_edg1_R14H ? next_up_samp1_R14S[1] : next_rt_samp1_R14S[1]) : box_R14S[0][1];
+
+	   next_validSamp_R14H = !at_end_box_R14H && isvalid; 
+      next_validSamp1_R14H = !at_end_box1_R14H && is1valid;
+
+
 	   next_isQuad_R14H    = isQuad_R14H;
 	   next_state_R14H     = at_end_box_R14H ? WAIT_STATE : TEST_STATE;
 
