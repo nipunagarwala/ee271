@@ -54,6 +54,10 @@
    logic signed   [`$sig_fig`-1:0] hit_R18S[`$axis`-1:0]; //Sample hit Location
    logic unsigned [`$sig_fig`-1:0] color_R18U[`$colors`-1:0]; //Sample hit Location
    logic 		        hit_valid_R18H ;  //Did Sample Hit?
+
+   logic signed   [`$sig_fig`-1:0] hit2_R18S[`$axis`-1:0]; //Sample hit Location
+   logic unsigned [`$sig_fig`-1:0] color2_R18U[`$colors`-1:0]; //Sample hit Location
+   logic            hit2_valid_R18H ;  //Did Sample Hit?
    //DUT OUTPUTS
    
 
@@ -76,7 +80,12 @@
 	     
 	     .hit_R18S(hit_R18S),             // Output: Sample Location Tested
 	     .color_R18U(color_R18U) ,            // Input: 4 Sets X,Y Fixed Point Values
-	     .hit_valid_R18H(hit_valid_R18H)  // Output: Does Sample lie in uPoly     
+	     .hit_valid_R18H(hit_valid_R18H),  // Output: Does Sample lie in uPoly     
+
+
+       .hit2_R18S(hit2_R18S),             // Output: Sample Location Tested
+       .color2_R18U(color2_R18U) ,            // Input: 4 Sets X,Y Fixed Point Values
+       .hit_valid2_R18H(hit_valid2_R18H)  // Output: Does Sample lie in uPoly  
 	 );
 
 
@@ -115,7 +124,11 @@
 	          // Input Signals (from DUT outputs)
 	     .hit_R18S(hit_R18S),             
 	     .color_R18U(color_R18U) ,          
-	     .hit_valid_R18H(hit_valid_R18H)  
+	     .hit_valid_R18H(hit_valid_R18H),
+
+       .hit2_R18S(hit2_R18S),             
+       .color2_R18U(color2_R18U) ,          
+       .hit_valid2_R18H(hit_valid2_R18H)  
 	 );
    
 

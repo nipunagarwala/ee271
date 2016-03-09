@@ -97,9 +97,9 @@ int rastBBox_bbox_check( int   v0_x,     //uPoly
   ll_y = ( !b_y[2] && !b_y[4] && !b_y[5] && q ) ? poly.v[3].x[1] :  ll_y ;
 
   //add in backface culling
-  // int forwardfacing = ((poly.v[1].x[0] - poly.v[0].x[0])*(poly.v[2].x[1] - poly.v[1].x[1]) - (poly.v[2].x[0] - poly.v[1].x[0])*(poly.v[1].x[1] - poly.v[0].x[1])) <= 0;
-
-  valid = (! ((ll_x > screen_w) || (ll_y > screen_h) || (ur_x < 0) || (ur_y < 0)) ) && valid_Poly;// && forwardfacing; 
+  int forwardfacing = ((poly.v[1].x[0] - poly.v[0].x[0])*(poly.v[2].x[1] - poly.v[1].x[1]) - (poly.v[2].x[0] - poly.v[1].x[0])*(poly.v[1].x[1] - poly.v[0].x[1])) <= 0;
+  // int forwardfacing = 1;
+  valid = (! ((ll_x > screen_w) || (ll_y > screen_h) || (ur_x < 0) || (ur_y < 0)) ) && valid_Poly && forwardfacing; 
 
 
   //Clamp BBox
