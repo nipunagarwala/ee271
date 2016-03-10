@@ -1,0 +1,5290 @@
+Chronologic VCS simulator copyright 1991-2011
+Contains Synopsys proprietary information.
+Compiler version F-2011.12_Full64; Runtime version F-2011.12_Full64;  Mar  9 21:39 2016
+Message: From $vcdplusmemon at time 0 in file genesis_verif/testbench_unq1.v line 377: [VCD+-SFSL]: 
+Setting file switch size limit to (100) megabytes.
+Message: From $vcdplusmemon at time 0 in file genesis_verif/testbench_unq1.v line 377: [VCD+-SVBS]: 
+Setting buffer size to (100) megabytes.
+time=         0 ************** Driver Is Initializing Input Signals *****************
+time=         0 ************** Loading Arguments *****************
+Simulation run with default random seed=12345
+Simulation will timout after 50000000 cycles
+Simulation will use test file /usr/class/ee271/project//vect//vec_271_02_sv_short.dat
+Seed=      12345 
+RT Warning: No condition matches in 'unique case' statement.
+        "genesis_synth/test_iterator_unq1.v", line 303, for top_rast.rast.test_iterator, at time     0.
+RT Warning: No condition matches in 'unique case' statement.
+        "genesis_synth/test_iterator_unq1.v", line 303, for top_rast.rast.test_iterator, at time     0.
+time=     15000 ************** Driver Is Initializing Test from File *****************
+Setting screen params: w=800 h=600 msaa=16
+time=     30000 ************** Initializing FB and ZB *****************
+time=     30010 ************** Finished Init FB and ZB *****************
+time=     45000 ************** Runnning Test *****************
+time=     45000 ************** Driver Is Runnning Test -->/usr/class/ee271/project//vect//vec_271_02_sv_short.dat<-- *****************
+time=     49000 	         0 samples processed,          0 of them hit
+time=     50000 	         0 samples processed,          0 of them hit
+time=     51000 	         0 samples processed,          0 of them hit
+time=     52000 	         0 samples processed,          0 of them hit
+time=     53000 	         0 samples processed,          0 of them hit
+time=     54000 	         0 samples processed,          0 of them hit
+time=     55000 	         0 samples processed,          0 of them hit
+time=     56000 	         0 samples processed,          0 of them hit
+time=     57000 	         0 samples processed,          0 of them hit
+Check hw to gold  6 to 5 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  5 to 3 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  4 to 2 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  12 to 10 
+
+Check hw to gold  12 to 10 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  12 to 11 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  12 to 10 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  2 to 1 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  2 to 1 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  2 to 1 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  12 to 10 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  5 to 3 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  12 to 11 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  2 to 1 
+
+Check hw to gold  2 to 1 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  13 to 12 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  12 to 10 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  13 to 11 
+
+Check hw to gold  12 to 10 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  13 to 11 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  14 to 12 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  12 to 11 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  5 to 3 
+
+Check hw to gold  2 to 1 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  2 to 1 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  2 to 1 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  5 to 3 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  5 to 3 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  5 to 3 
+
+Check hw to gold  5 to 3 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  5 to 3 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  12 to 11 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  12 to 11 
+
+Check hw to gold  12 to 11 
+
+Check hw to gold  12 to 10 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  2 to 1 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  12 to 11 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  13 to 12 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  13 to 11 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  5 to 3 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  5 to 3 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  12 to 11 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  4 to 2 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  12 to 10 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  12 to 10 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  5 to 3 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  13 to 11 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  12 to 11 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  12 to 11 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  4 to 2 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  12 to 11 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  4 to 2 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  5 to 3 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  2 to 1 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  2 to 1 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  2 to 1 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  12 to 11 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  12 to 11 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  2 to 1 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  5 to 3 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  12 to 10 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  5 to 3 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  5 to 3 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  12 to 11 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  14 to 13 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  14 to 12 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  12 to 11 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  12 to 11 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  14 to 12 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  12 to 10 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  12 to 11 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  12 to 10 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  5 to 3 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  5 to 3 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  12 to 10 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  14 to 12 
+
+Check hw to gold  12 to 10 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  2 to 1 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  5 to 3 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  12 to 11 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  13 to 12 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  12 to 11 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  13 to 11 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  12 to 11 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  2 to 1 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  2 to 1 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  2 to 1 
+
+Check hw to gold  2 to 1 
+
+Check hw to gold  2 to 1 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  4 to 2 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  2 to 1 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  13 to 12 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  2 to 1 
+
+Check hw to gold  2 to 1 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  2 to 1 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  5 to 3 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  13 to 12 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  5 to 3 
+
+Check hw to gold  13 to 11 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  12 to 10 
+
+Check hw to gold  12 to 10 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  2 to 1 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  16 to 15 
+
+Check hw to gold  13 to 12 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  2 to 1 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  12 to 10 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  2 to 1 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  5 to 3 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  13 to 12 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  12 to 11 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  12 to 11 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  12 to 10 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  5 to 3 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  12 to 10 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  12 to 10 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  12 to 10 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  5 to 3 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  13 to 12 
+
+Check hw to gold  13 to 11 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  12 to 11 
+
+Check hw to gold  12 to 11 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  5 to 3 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  12 to 10 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  13 to 11 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  12 to 10 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  12 to 10 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  2 to 1 
+
+Check hw to gold  2 to 1 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  2 to 1 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  2 to 1 
+
+Check hw to gold  2 to 1 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  15 to 14 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  5 to 3 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  12 to 11 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  2 to 1 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  13 to 11 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  5 to 3 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  5 to 3 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  5 to 3 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  5 to 3 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  12 to 10 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  13 to 12 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  13 to 12 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  14 to 13 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  2 to 1 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  5 to 3 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  13 to 11 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  12 to 11 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  5 to 3 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  4 to 3 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  2 to 1 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  4 to 2 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  2 to 1 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  3 to 2 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  12 to 11 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  12 to 10 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  12 to 10 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  12 to 11 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  12 to 11 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  12 to 10 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  12 to 11 
+
+Check hw to gold  12 to 10 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  12 to 11 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  11 to 9 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  12 to 11 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  13 to 11 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  8 to 9 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  6 to 5 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  10 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  6 to 4 
+
+Check hw to gold  11 to 10 
+
+Check hw to gold  5 to 4 
+
+Check hw to gold  7 to 5 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  9 to 7 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  10 to 9 
+
+Check hw to gold  8 to 7 
+
+Check hw to gold  9 to 8 
+
+Check hw to gold  8 to 6 
+
+Check hw to gold  7 to 6 
+
+Check hw to gold  5 to 4 
+
+time=  71393000 ************** Driver Is Done *****************
+time=  71408010 ************** Writing Final Image to File *****************
+time=  71408030 ************** Finished Final Image to File *****************
+time=  71408040 ********************FINISH***********************
+Cycles:       71360 uPoly:       10001 sampleTests:       66355 sampleHits:       14564 
+
+JJ: uPoly / cycle : 0.140149 
+JJ: cycle / uPoly : 7.135286 
+$finish called from file "genesis_verif/testbench_unq1.v", line 336.
+$finish at simulation time             71408040
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 71408040 ns
+CPU Time:      3.930 seconds;       Data structure size:   0.3Mb
+Wed Mar  9 21:39:18 2016
